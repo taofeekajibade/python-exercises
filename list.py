@@ -29,22 +29,27 @@ print(myList)
 print(myFav)
 
 # List allows slice to mutate values
+# Slice has two end points - beginning index and ending index
+# An ommitted first index defaults to zero
+# An ommitted second index defaults to the size
+# of the string that is being sliced.
+
+secList = myList[0:3] 
 
 myList[3:7] = [41, 51, 61, 71]
 
 newList = myList
 print(newList)
-
+print(secList)
 # Lenght of list can also be printed
 
 print(len(myList))
 print(len(myFav))
 print(len(myLibrary))
-
 # Fibonacci code
 
 a = 0
 b = 1
 while b < 200:
-    print(b)
+    print(b, end=',')
     a, b = b, b+a
