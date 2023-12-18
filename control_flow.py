@@ -2,9 +2,10 @@
 
 # if statement
 
+"""
 x = int(input("Enter a value here: "))
 if x < 0:
-    x = 0
+    x = /  
     print("You have entered a negative value")
 elif x == 0:
     print("You entered zero")
@@ -46,3 +47,21 @@ for number in range(100):
 
 print(list(range(2, 100)))
 print(range(2, 100, 3))
+
+"""
+
+
+username = 'Taofeek'
+passkey = 'cleargoal'
+
+print("Enter your name and password here")
+
+name = input()
+Pass = str(input())
+
+if name == username:
+    print("Hello,", username)
+    if Pass == passkey:
+        print("You are welcome to your inbox,", username)
+    else:
+        print("You have entered a wrong password")
