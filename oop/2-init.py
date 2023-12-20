@@ -26,7 +26,7 @@ class myInit:
     
     def greet(self):
         if self.name:
-            print("I am {}.".format(self.name))
+            print(f"I am {self.name}.")
         else:
             print("I have no name whatsoever!")
     

@@ -5,12 +5,12 @@ class MicfisSchool:
         self.name = name
         self.age = age
         self.gender = gender
-        print("We are glad to introduce {}, a {} member of this community".format(self.name, self.gender))
+        print(f"We are glad to introduce {self.name}, a {self.gender} member of this community.")
 
-    print("_____________________________________________________________\n")
+    print("\n") # print a new line as separator
 
     def introduce(self):
-        print("{} is {:d} years of age".format(self.name, self.age))
+        print(f"{self.name} is {self.age} years of age")
 
 # Staff class can inherit the attributes of the super class - Micfisschool
 class Staff(MicfisSchool):
@@ -24,7 +24,7 @@ class Staff(MicfisSchool):
 
     def introduce(self):
         MicfisSchool.introduce(self)
-        print("Monthly wage is {:d}".format(self.salary))
+        print(f"Monthly wage is {self.salary}")
 
 # Student class can inherit the attributes of the super class - Micfisschool
 class Student(MicfisSchool):
@@ -34,7 +34,7 @@ class Student(MicfisSchool):
     
     def introduce(self):
         MicfisSchool.introduce(self)
-        print("{}, a student of this school scored a total {:d} in his exams.".format(self.name, self.score))
+        print(f"{self.name}, a student of this school scored a total {self.score} in his exams.")
 
 t = Staff('Mr. Egbedele', 45, 'male', 72000)
 x = Staff('Mrs. Olaniyi', 35, 'female', 85000)
@@ -43,4 +43,3 @@ y = Student('Akeem Olayiwola', 16, 'male', 97)
 members = [t, x, y]
 for member in members:
     member.introduce()
-    
