@@ -28,7 +28,7 @@ first_instance = myInit()
 ```
 ***
 OUTPUT:
-    This is how to initialize an instance with __init__
+        This is how to initialize an instance with __&#95;init&#95;__
 ***
 ## Inheritance
 OOP allows easy reuse of codes through inheritance. By this method, sub-classes are able to inherit some common traits from the base class. For instance, if we have a community of people, they may share some common attributes (variables) such as age, gender, ethnicity and language, Depending on their training or capacity, they may also differ in certain other afas such social class/status, politcal affliations, profession and the likes. When the population is stratified, certain common attributes can simply be inherited from the base population rather than writing such fields afresh. Thus, traits that vary among individuals, such as social class, political affiliations, or profession, can be defined in specific sub-classes. Below is a code sample of inheritance:
