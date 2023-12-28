@@ -1,0 +1,25 @@
+In this file, I provide a simple step-by-step explanation of what the script does.
+First, it imports the necessary module as seen at the top of the script.
+secondly, it creates two variables - the script name and the filename as arguments.
+Third, it opens the file, reads it and print to the stdout.
+
+Next, it prompts the user to enter another filename to be opened and read.
+It then repeats the process in line 4 above.
+
+The open() function opens a fie, and returns it as a file object. Its syntax is `open(file, mode)`. A fille can be opened in different modes:
+    "r" - Read - default value - opens a file for reading.
+
+    "a" - Append - opens a file for appending. It creates the file if it does not already exist.
+
+    "w" - Write - opens a file for writing. It creates one if it does not exist.
+
+    "x" - Create - creates a new file. It returns an error if the file already exists.
+
+Also, it can be specified if the file should be opened in default text ("t") or in binary ("b").I am adding a new content as a demo.I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
+I am adding a new content as a demo.
