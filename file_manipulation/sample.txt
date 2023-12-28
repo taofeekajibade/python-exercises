@@ -1,9 +1,0 @@
-I want to write some text here so that I can read them using a python code from another script.
-I hope I am able to do it well, and get it once an for all.
-Never mind, it is a test file.
-It is meant to test how much I understand file reading with python.
-What I want to do is open this file in my script and print it out.
-There are two ways to do this: I can hard code - directly writing the name of the file to be opened in my script,
-or ask the user to enter the name of the file they would like to open.
-The second way is much better as it would allow the script to be able to open other files later.
-Now, to do this, I will need to use argv or input for users to be able to enter filenames.

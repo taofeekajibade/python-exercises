@@ -1,7 +1,0 @@
-In the file, I provide a simple step-by-step explanation of what the script does.
-First, it imports the necessary module as seen at the top of the script.
-secondly, it creates two variables - the script name and the filename as arguments.
-Third, it opens the file, reads it and print to the stdout.
-
-Next, it prompts the user to enter another filename to be opened and read.
-It then repeats the process in line 4 above.
