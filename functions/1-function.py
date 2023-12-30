@@ -8,8 +8,8 @@ def print_all(a):
 def rewind(a):
     a.seek(0)
 
-def print_a_line(line, a):
-    print(line, a.readline())
+def print_a_line(line_num, a):
+    print(line_num, a.readline())
 
 current_file = open(input)
 
