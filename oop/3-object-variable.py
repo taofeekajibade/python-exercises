@@ -1,6 +1,7 @@
 # create a class Robot
 class Robot:
-    num_of_robot = 0                 # create a variable that counts the number of robots
+    """ create a class variable that counts the number of robots """
+    num_of_robot = 0
 
     # initialize the data (robot instance) with a name
 
@@ -8,7 +9,7 @@ class Robot:
         self.name = name
         print(f"(Initializing {self.name}).")
 
-        Robot.num_of_robot += 1      # current number of robots
+        Robot.num_of_robot += 1     # current number of robots
 
     def die(self):
         print(f"{self.name} is now being destroyed!")

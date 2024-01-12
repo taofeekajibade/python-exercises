@@ -85,9 +85,31 @@ In summary, it is observed that:
 - Class and instance variables can be accessed using the syntax "class_name.variable_name" and "instance_name.variable_name" respectively.
 
 ## Inheritance
-OOP allows easy reuse of codes through inheritance. By this method, sub-classes are able to inherit some common traits from the base class. For instance, if we have a community of people, they may share some common attributes (variables) such as age, gender, ethnicity and language, Depending on their training or capacity, they may also differ in certain other afas such social class/status, politcal affliations, profession and the likes. When the population is stratified, certain common attributes can simply be inherited from the base population rather than writing such fields afresh. Thus, traits that vary among individuals, such as social class, political affiliations, or profession, can be defined in specific sub-classes. Below is a code sample of inheritance:
+A major concept in OOP is inheritance. Inheritance allows a programmer to create a heirarchy of classes that share certain methods and properties. Inheritance provides system for a class to reuse the codes - attributes and methods - from another class. By this method, sub-classes, called *derived classes* are able to inherit some common traits from the *base class*. For instance, if we have a community of people, they may share some common attributes (variables) such as age, gender, ethnicity and language, Depending on their training or capacity, they may also differ in certain other afas such social class/status, politcal affliations, profession and the likes. When the population is stratified, certain common attributes can simply be inherited from the base population rather than writing such fields afresh. 
+
+### Benefits of Inheritance
+- It represents a typical real world relationship.
+- It facilitates the reusability of a code.
+- It offers a simple model structure.
+- It allows a programmer to add more features to a class without modifying it.
+- It is progressive in nature. That is, if a class B inherits from a class A, all the sub-classes of class B will automatically inherit the property and methods in class A.
+- Inheritance essentially means less development and maintenance expenses.
+
+### A basic inheritance class
 
 ```python
+class BaseClass:
+    {Body}
+
+class DerivedClass(BaseClass):
+    {body}
+
+```
+From the above example, traits that vary among individuals, such as social class, political affiliations, or profession, can be defined in specific sub-classes. Below is a code sample of inheritance:
+
+```python
+
+""" A python code to demonstrate inheriance """
 class Person:
     def __init__(self, age, gender, ethnicity, language):
         self.age = age
@@ -101,8 +123,7 @@ class Professional(Person):
         super().__init__(age, gender, ethnicity, language)
         self.profession = profession
 ```
-
-Certainly! This code defines two classes in Python: `Person` and `Professional`.
+_This code defines two classes in Python: `Person` and `Professional`._
 
 1. **Person Class:**
    - The `Person` class is a basic class that represents a person.
@@ -131,3 +152,6 @@ print(person.age, person.gender, person.ethnicity, person.language)
 print(professional.age, professional.gender, professional.ethnicity, professional.language, professional.profession)
 ```
 This code demonstrates the basic usage of the `Person` and `Professional` classes, showing how the `Professional` class inherits attributes from the `Person` class and extends them with an additional attribute.
+
+## The super() function
+This is a function that returns the objects that represent the parent class. It allows access to the methods and properties in the parent class.
