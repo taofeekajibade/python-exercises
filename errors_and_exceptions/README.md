@@ -16,6 +16,9 @@ In Python, errors and exceptions refer to situations where the interpreter encou
    IndentationError: unexpected indent
 ```
 ```python
+while True print("Hello World!")
+```
+```python
 while True print('Hello world')
   File "/home/taofeekajibade/python-exercises/errors_and_exceptions/syntax_error.py", line 1
     while True print('Hello world')
