@@ -15,9 +15,7 @@ In Python, errors and exceptions refer to situations where the interpreter encou
     if x > 5
    IndentationError: unexpected indent
 ```
-To rectify this error, add a colon at the end of the `if` statement.
-
-Meanwhile, usually, the parser will print the line where the error has been detected and displays a little ‘arrow’ pointing at the earliest point in the line where the error was observed.
+To rectify this error, add a colon at the end of the `if` statement. Meanwhile, usually, the parser will print the line where the error has been detected and displays a little ‘arrow’ pointing at the earliest point in the line where the error was observed.
 
 ```python
 while True print('Hello world')
