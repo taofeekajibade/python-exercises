@@ -11,12 +11,12 @@ In Python, errors and exceptions refer to situations where the interpreter encou
    # Syntax Error Example
    if x > 5
       print("x is greater than 5")
-
 File "/home/taofeekajibade/python-exercises/errors_and_exceptions/syntax_error.py", line 1
     if x > 5
 IndentationError: unexpected indent
-   ```
+```
 So, to rectify this error, add a colon at the end of the 'if' statement.
+
 Usually, the parser will print the line where the error has been detected and displays a little ‘arrow’ pointing at the earliest point in the line where the error was observed.
 
 ```python
