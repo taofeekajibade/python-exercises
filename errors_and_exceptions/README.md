@@ -16,15 +16,16 @@ In Python, errors and exceptions refer to situations where the interpreter encou
    IndentationError: unexpected indent
 ```
 ```python
-while True print("Hello World!")
-```
-```python
-while True print('Hello world')
+while True print("Hello World")
   File "/home/taofeekajibade/python-exercises/errors_and_exceptions/syntax_error.py", line 1
     while True print('Hello world')
                    ^
 SyntaxError: invalid syntax
 ```
+To rectify the first error, add a colon at the end of the `if` statement. Similarly, add a colon after `True` keyword in the second example.
+
+Meanwhile, usually, the parser will print the line where the error has been detected and displays a little ‘arrow’ pointing at the earliest point in the line where the error was observed.
+
 
 2. **Exceptions:**
    - **Definition:** Exceptions are errors that occur during the execution of a program but are not necessarily fatal. Python provides a way to handle these exceptions gracefully.
