@@ -2,9 +2,34 @@
 
 In Python, a module is a file which contains Python definitions and statements. The file name is the module name with the suffix `.py`. For example, if you have a file named `my_module.py`, it can be imported as a module in another Python script or program.
 
+A module can also be written in the native language of the Python interpreter itself - the C programming language. When compiled, they can be used from your Python code when using the standard Python interpreter.
+
 Modules allow a programmer to organize Python codes into reusable units. They provide a way to structure large programs and encourage code reusability. The functions, variables, and classes defined in a module can be reused by importing them into another script or program.
 
 Below a simple example:
+
+create a file with the name `sample_module.py`
+
+```python
+def say_hello():
+    print("Hello, I am  a sample module.")
+
+__version__ = "1.0"
+```
+
+```python
+import sample_module
+
+sample_module.say_hello()
+print("Version: ", sample_module.__version__)
+```
+
+```python
+~/.../python-exercises/module $ python3 impo
+rt.py                                       Hello, I am a sample module.
+Version : 1.0
+~/.../python-exercises/module $
+```
 
 Suppose you have a module named `math_operations.py` with the following content:
 

@@ -12,3 +12,6 @@ capable of being run as a script from the command line.
 if __name__ == "__main__":
     import sys
     fib(int(sys.argv[1]))
+    print("I am being run directly.")
+else:
+    print("I am being imported.")
